@@ -1,0 +1,238 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+section {
+  padding-top: 128px;
+  position: relative;
+}
+
+section::before {
+  z-index: -5;
+  content: "";
+  font-size: 52px;
+  color: black;
+  opacity: 0.5;
+  position: absolute;
+  font-weight: 700;
+  top: 50px;
+  left: -30px;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(98, 182, 252, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar li a {
+  animation: bounceIn 1.5s;
+}
+
+#logo {
+  margin: 0;
+  animation: bounceIn 1.5s;
+}
+
+#title {
+  padding: 128px 0 0 64px;
+}
+
+.home img {
+  width: 100%;
+}
+
+#home h1 {
+  position: relative;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+#home h1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: right 2s ease forwards;
+  animation-delay: 1s;
+}
+
+#home h3 {
+  position: relative;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+#home h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: right 2s ease forwards;
+  animation-delay: 0.8s;
+}
+
+#home p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#home p::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: right 2s ease forwards;
+  animation-delay: 2s;
+}
+
+#img img {
+  width: 100%;
+  animation: bounceIn 1.5s;
+}
+
+.btn.button {
+  border: 2px solid black;
+  border-radius: 24px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+}
+
+#info-contact {
+  border: 2px solid black;
+  border-radius: 24px;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  animation: bounceIn 1.5s;
+}
+
+#info-contact:hover {
+  border: 2px solid aqua;
+  border-radius: 24px;
+  background-color: aqua;
+  color: white;
+  font-weight: 500;
+  animation: bounceIn 1.5s;
+}
+
+.btn.button:hover,
+.btn.button.active {
+  border: 2px solid aqua;
+  background-color: aqua;
+  color: black;
+}
+
+#info-bot p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#info-bot p::before {
+  content: "";
+  position: absolute;
+  padding-top: 20px;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  animation: right 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+.transform {
+  animation: bounceIn 1.5s;
+}
+
+#arrow {
+  animation: 1.5s upAndDown infinite;
+}
+
+.about::before {
+  content: "About";
+}
+
+.about-exp-item {
+  margin-top: 32px;
+}
+
+.about-exp-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-exp-item-detail {
+  display: none;
+}
+
+.contact {
+  padding-bottom: 128px;
+}
+
+.contact::before {
+  content: "Contact";
+}
+
+.contact-form {
+  border: 1px solid black;
+  padding: 64px 32px;
+}
+
+.form-label {
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 576px) {
+  section::before {
+    left: -5px;
+    font-size: 42px;
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    filter: opacity(0);
+    transform: translateY(-80px);
+  }
+
+  100% {
+    filter: opacity(1);
+    transform: translateY(0);
+  }
+}
+
+@keyframes right {
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes upAndDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
