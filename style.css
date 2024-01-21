@@ -228,8 +228,8 @@ section::before {
     font-size: 28px;
   }
 
-  #home .col-12 {
-    padding: 0 32px;
+  #myinfo {
+    padding-left: 32px;
   }
 }
 @keyframes bounceIn {
