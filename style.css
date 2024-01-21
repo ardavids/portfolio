@@ -142,13 +142,13 @@ section::before {
   color: black;
 }
 
-#info-bot p {
+#info-bot a {
   position: relative;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
-#info-bot p::before {
+#info-bot a::before {
   content: "";
   position: absolute;
   padding-top: 20px;
